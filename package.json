@@ -4,7 +4,8 @@
   "description": "This plugin template uses Typescript. If you are familiar with Javascript, Typescript will look very familiar. In fact, valid Javascript code is already valid Typescript code.",
   "main": "code.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "webpack --mode=development --watch"
   },
   "author": "",
   "license": "ISC",
@@ -17,6 +18,8 @@
     "webpack-cli": "^3.3.9"
   },
   "dependencies": {
-    "highlight.js": "^9.15.10"
+    "highlight.js": "^9.15.10",
+    "xmldom": "^0.1.27",
+    "xpath": "0.0.27"
   }
 }
