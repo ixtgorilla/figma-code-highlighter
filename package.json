@@ -1,0 +1,22 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "This plugin template uses Typescript. If you are familiar with Javascript, Typescript will look very familiar. In fact, valid Javascript code is already valid Typescript code.",
+  "main": "code.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/highlight.js": "^9.12.3",
+    "ts-loader": "^6.2.0",
+    "typescript": "^3.6.4",
+    "url-loader": "^2.2.0",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "highlight.js": "^9.15.10"
+  }
+}
