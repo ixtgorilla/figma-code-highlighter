@@ -7,7 +7,15 @@ declare function require(path: string): any;
 
 figma.showUI(__html__);
 
-function nodeWalks() {}
+function* walkTree(node) {
+  yield node;
+  let children = node.childNodes;
+  if (children) {
+    for (let i = 0; i < children.length; i++) {
+      yield* walkTree(children[i]);
+    }
+  }
+}
 
 figma.ui.onmessage = msg => {
   console.log(figma.currentPage.selection);
@@ -19,34 +27,39 @@ figma.ui.onmessage = msg => {
 
         const result = highlightAuto(itm.characters, ["typescript"]);
         const str: string = `<div>${result.value}</div>`;
-        // console.log(result);
-        // console.log(document);
-        // let htmlObject = document.createElement("div");
-        // htmlObject.innerHTML = '<div id="myDiv"></div>';
+        const doc = new dom().parseFromString(str);
+
         console.log(str);
 
-        const doc = new dom().parseFromString(str);
-        console.log(doc);
+        let nodes = xpath.select("//div", doc)[0];
 
-        var nodes = xpath.select("//div", doc)[0];
+        let results = [];
+        let classNameCache: string = "";
 
-        console.log(nodes);
-        console.log(nodes.childNodes.length);
         for (let i = 0; i < nodes.childNodes.length; i++) {
-          console.log("============================================");
-          // ここで、ネスとのやつをしょりして、文字数から、カラーの設定をしていく
-          console.log("1---------------");
-          console.log(nodes.childNodes[i].childNodes);
-          console.log("2---------------");
-          console.log(nodes.childNodes[i]);
-        }
-        // console.log(nodes);
+          let walker = walkTree(nodes.childNodes[i]);
+          let done = true;
+          let res;
 
-        // console.log(nodes[0].localName + ": " + nodes[0].firstChild.data);
-        // console.log("Node: " + nodes[0].toString());
-        // console.log(document.evaluate("//div", htmlObject));
-        // console.log(wa);
-        // console.log(htmlObject);
+          while (!(res = walker.next()).done) {
+            let node = res.value;
+            console.log(node);
+
+            if (node.data) {
+              results.push({
+                data: node.data,
+                length: node.length,
+                className: classNameCache
+              });
+
+              classNameCache = "";
+            } else {
+              classNameCache = node.attributes[0].nodeValue;
+            }
+          }
+        }
+
+        console.log(results);
       }
     });
 
