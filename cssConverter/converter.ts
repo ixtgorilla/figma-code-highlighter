@@ -1,4 +1,5 @@
 import * as fs from "fs";
+import { camelize } from "humps";
 
 interface Rgb {
   r: number;
@@ -33,10 +34,14 @@ function colorObject(colorCode: string): Rgb {
   };
 }
 
+// Get primary color (from .hljs)
 function primaryColor(content: string): Rgb {
-  const primaries = content.match(/((.hljs) {|(.hljs){)([\s\S]*?)}/gi);
+  const primaries = content.match(
+    /((.hljs) {|(.hljs){|(.hljs) (\n|\r\n|\r){)([\s\S]*?)}/gi
+  );
 
   const cssColor: string[] = primaries[0].match(/(color:).\#[0-9A-Za-z]{6}/gi);
+
   if (cssColor) {
     const colorCode = cssColor[0].match(/[0-9A-Za-z]{6}/)[0];
     return colorObject(colorCode);
@@ -45,6 +50,7 @@ function primaryColor(content: string): Rgb {
   }
 }
 
+// Detect color codes from css blocks
 function generateColorSchemas(
   blocks: string[],
   primaryColor: Rgb
@@ -54,10 +60,10 @@ function generateColorSchemas(
   };
 
   blocks.map(item => {
-    let classes = item.match(/(.(.*),)|(.(.)*{)/gi);
+    let classes = item.match(/(.(.*),)|(.(.)*{)|(.(.) (\n|\r\n|\r){)/gi);
 
     classes = classes.map(item => {
-      return item.replace(/\.|,|\{| /g, "");
+      return item.replace(/\.|,|\{| |\n|\r\n|\r/g, "");
     });
 
     const color = generateColorObject(item, primaryColor);
@@ -70,7 +76,41 @@ function generateColorSchemas(
   return colorSchemas;
 }
 
-const content = fs.readFileSync("./styles/shades-of-purple.css", "utf8");
-const blocks = content.match(/.hljs([\s\S]*?)}/gi);
+//
+// main
+//
 
-let colorSchemas = generateColorSchemas(blocks, primaryColor(content));
+let dir = "./styles";
+let failList = [];
+
+fs.readdir(dir, function(err, files) {
+  if (err) throw err;
+
+  let fileList = files.filter(function(file) {
+    return (
+      fs.statSync(dir + "/" + file).isFile() &&
+      /.*\.css$/.test(dir + "/" + file)
+    );
+  });
+
+  fileList.map(file => {
+    const content = fs.readFileSync(dir + "/" + file, "utf8");
+    const blocks = content.match(/.hljs([\s\S]*?)}/gi);
+    try {
+      const pColor = primaryColor(content);
+      let colorSchemas = generateColorSchemas(blocks, pColor);
+      const writeFileName = camelize(file.replace(".css", ""));
+      fs.writeFileSync(
+        `./outputs/${writeFileName}.ts`,
+        `const ${writeFileName} = ${JSON.stringify(colorSchemas)};
+         export default ${writeFileName};
+        `
+      );
+    } catch (e) {
+      console.log(e);
+      failList.push(file);
+    }
+  });
+
+  console.log(failList);
+});
