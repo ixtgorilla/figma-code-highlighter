@@ -8,7 +8,7 @@ import { SchemaAndLanguage } from "../model/SchemaAndLanguage";
 const postMessage = (schemaAndLanguage: SchemaAndLanguage) => {
   console.log("wao??");
   parent.postMessage(
-    { pluginMessage: { type: "change", schemaAndLanguage } },
+    { pluginMessage: { type: "CHANGE_COLOR", schemaAndLanguage } },
     "*"
   );
 };
@@ -19,11 +19,16 @@ const HighLightSelector: React.FC = () => {
     colorSchema: ""
   });
 
+  useEffect(() => {
+    onmessage = event => {
+      setSchemaAndLanguage(event.data.pluginMessage);
+    };
+  });
+
   return (
     <div>
       <h2>Highlight.js - figma</h2>
       <select
-        // value={schemaAndLanguage.language}
         onChange={e => {
           setSchemaAndLanguage(
             Object.assign(schemaAndLanguage, { colorSchema: e.target.value })
@@ -32,7 +37,11 @@ const HighLightSelector: React.FC = () => {
         }}
       >
         {colorSchemaList.map((colorSchema, index) => {
-          return (
+          return colorSchema == schemaAndLanguage.colorSchema ? (
+            <option selected value={colorSchema} key={index}>
+              {colorSchema}
+            </option>
+          ) : (
             <option value={colorSchema} key={index}>
               {colorSchema}
             </option>
@@ -40,7 +49,6 @@ const HighLightSelector: React.FC = () => {
         })}
       </select>
       <select
-        // value={schemaAndLanguage.colorSchema}
         onChange={e => {
           setSchemaAndLanguage(
             Object.assign(schemaAndLanguage, { language: e.target.value })
@@ -49,7 +57,11 @@ const HighLightSelector: React.FC = () => {
         }}
       >
         {languageList.map((language, index) => {
-          return (
+          return language == schemaAndLanguage.language ? (
+            <option selected value={language} key={index}>
+              {language}
+            </option>
+          ) : (
             <option value={language} key={index}>
               {language}
             </option>
@@ -62,6 +74,13 @@ const HighLightSelector: React.FC = () => {
         }}
       >
         Execute
+      </button>
+      <button
+        onClick={e => {
+          console.log(schemaAndLanguage);
+        }}
+      >
+        CheckIt
       </button>
     </div>
   );
