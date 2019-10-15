@@ -1,7 +1,7 @@
 import { highlightAuto } from "highlight.js";
-// import gorillaColorSchema from "./colorSchema/gorillaColorSchema";
-import vs2015 from "../cssConverter/outputs/vs2015";
-import hopscotch from "../cssConverter/outputs/hopscotch";
+import * as colorSchema from "./colorSchema/index";
+
+import { SchemaAndLanguage } from "./model/SchemaAndLanguage";
 
 const xpath = require("xpath");
 const dom = require("xmldom").DOMParser;
@@ -39,14 +39,18 @@ function countLength(node): number {
 }
 
 figma.ui.onmessage = msg => {
-  console.log(figma.currentPage.selection);
+  // console.log(figma.currentPage.selection);
+
+  const schemaAndLanguage: SchemaAndLanguage = msg.schemaAndLanguage;
 
   figma.currentPage.selection &&
     figma.currentPage.selection.map((item, index) => {
       if (item.type == "TEXT") {
         let itm: TextNode = item;
 
-        const result = highlightAuto(itm.characters, ["typescript"]);
+        const result = highlightAuto(itm.characters, [
+          schemaAndLanguage.language
+        ]);
         const str: string = `<div>${result.value}</div>`;
         const doc = new dom().parseFromString(str);
 
@@ -77,16 +81,21 @@ figma.ui.onmessage = msg => {
         }
 
         /* 文字全体をまずデフォルトカラーで着色 */
-        itm.setRangeFills(0, itm.characters.length, [<Paint>hopscotch["hljs"]]);
+        itm.setRangeFills(0, itm.characters.length, [
+          <Paint>colorSchema[schemaAndLanguage.colorSchema]["hljs"]
+        ]);
 
         /* 着色する部分を適応 */
         results.map(res => {
-          itm.setRangeFills(res.lengthStart, res.lengthEnd, [
-            hopscotch[res.className]
-          ]);
+          let color = colorSchema[schemaAndLanguage.colorSchema][res.className];
+          color = color
+            ? color
+            : <Paint>colorSchema[schemaAndLanguage.colorSchema]["hljs"];
+
+          itm.setRangeFills(res.lengthStart, res.lengthEnd, [color]);
         });
       }
     });
 
-  figma.closePlugin();
+  // figma.closePlugin();
 };
