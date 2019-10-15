@@ -1,12 +1,10 @@
 import * as React from "react";
-import * as ReactDOM from "react-dom";
 import { useState, useEffect } from "react";
 import colorSchemaList from "../const/colorSchemalist";
 import languageList from "../const/languagelist";
 import { SchemaAndLanguage } from "../model/SchemaAndLanguage";
 
-const postMessage = (schemaAndLanguage: SchemaAndLanguage) => {
-  console.log("wao??");
+const execute = (schemaAndLanguage: SchemaAndLanguage) => {
   parent.postMessage(
     { pluginMessage: { type: "CHANGE_COLOR", schemaAndLanguage } },
     "*"
@@ -19,11 +17,37 @@ const HighLightSelector: React.FC = () => {
     colorSchema: ""
   });
 
+  const [
+    bookmarkedSchemaAndLanguages,
+    setBookmarkedSchemaAndLanguages
+  ] = useState([]);
+
   useEffect(() => {
     onmessage = event => {
-      setSchemaAndLanguage(event.data.pluginMessage);
+      if (event.data.pluginMessage.type == "CURRENT_SCHEMA_AND_LANGUAGE") {
+        setSchemaAndLanguage(event.data.pluginMessage.schemaAndLanguage);
+      }
+
+      if (event.data.pluginMessage.type == "BOOKMARKED_SCHEMA_AND_LANGUAGES") {
+        setBookmarkedSchemaAndLanguages(array => [
+          ...array,
+          ...event.data.pluginMessage.schemaAndLanguages
+        ]);
+      }
     };
   });
+
+  useEffect(() => {
+    parent.postMessage(
+      {
+        pluginMessage: {
+          type: "UPDATE_BOOKMARKS",
+          schemaAndLanguages: bookmarkedSchemaAndLanguages
+        }
+      },
+      "*"
+    );
+  }, [bookmarkedSchemaAndLanguages]);
 
   return (
     <div>
@@ -33,7 +57,6 @@ const HighLightSelector: React.FC = () => {
           setSchemaAndLanguage(
             Object.assign(schemaAndLanguage, { colorSchema: e.target.value })
           );
-          console.log(schemaAndLanguage);
         }}
       >
         {colorSchemaList.map((colorSchema, index) => {
@@ -53,7 +76,6 @@ const HighLightSelector: React.FC = () => {
           setSchemaAndLanguage(
             Object.assign(schemaAndLanguage, { language: e.target.value })
           );
-          console.log(schemaAndLanguage);
         }}
       >
         {languageList.map((language, index) => {
@@ -70,18 +92,53 @@ const HighLightSelector: React.FC = () => {
       </select>
       <button
         onClick={e => {
-          postMessage(schemaAndLanguage);
+          execute(schemaAndLanguage);
         }}
       >
-        Execute
+        execute
       </button>
       <button
         onClick={e => {
-          console.log(schemaAndLanguage);
+          setBookmarkedSchemaAndLanguages(array => {
+            const obj = Object.assign({}, schemaAndLanguage);
+            return [...array, obj];
+          });
         }}
       >
-        CheckIt
+        bookmark
       </button>
+      <hr />
+      {bookmarkedSchemaAndLanguages &&
+        bookmarkedSchemaAndLanguages.map((item, index) => {
+          let schemaAndLanguage: SchemaAndLanguage = item;
+          return (
+            <div key={index}>
+              <span>{schemaAndLanguage.colorSchema}</span>
+              <span> / </span>
+              <span>{schemaAndLanguage.language}</span>
+              <span>
+                <button
+                  onClick={e => {
+                    setBookmarkedSchemaAndLanguages(array => {
+                      array.splice(index, 1);
+                      return [...array];
+                    });
+                  }}
+                >
+                  Destroy
+                </button>
+
+                <button
+                  onClick={e => {
+                    execute(schemaAndLanguage);
+                  }}
+                >
+                  execute
+                </button>
+              </span>
+            </div>
+          );
+        })}
     </div>
   );
 };
