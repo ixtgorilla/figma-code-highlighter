@@ -1,6 +1,7 @@
 import { highlightAuto } from "highlight.js";
 // import gorillaColorSchema from "./colorSchema/gorillaColorSchema";
 import vs2015 from "../cssConverter/outputs/vs2015";
+import hopscotch from "../cssConverter/outputs/hopscotch";
 
 const xpath = require("xpath");
 const dom = require("xmldom").DOMParser;
@@ -76,17 +77,12 @@ figma.ui.onmessage = msg => {
         }
 
         /* 文字全体をまずデフォルトカラーで着色 */
-        itm.setRangeFills(0, itm.characters.length, [
-          {
-            type: "SOLID",
-            color: { r: 0.890625, g: 0.71484375, b: 0.50390625 }
-          }
-        ]);
+        itm.setRangeFills(0, itm.characters.length, [<Paint>hopscotch["hljs"]]);
 
         /* 着色する部分を適応 */
         results.map(res => {
           itm.setRangeFills(res.lengthStart, res.lengthEnd, [
-            vs2015[res.className]
+            hopscotch[res.className]
           ]);
         });
       }
