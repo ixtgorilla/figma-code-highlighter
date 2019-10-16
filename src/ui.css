@@ -1,0 +1,48 @@
+.box {
+  margin: 8px 0 16px;
+}
+
+.flex {
+  display: flex;
+  padding-bottom: 8px;
+}
+
+.flexChild:first-child {
+  width: 50%;
+  padding-right: 4px;
+}
+
+.flexChild:last-child {
+  width: 50%;
+  padding-left: 4px;
+}
+
+.buttonFullWidth {
+  display: block;
+  width: 100%;
+}
+
+.boxPadding {
+  padding: 16px 0;
+}
+
+.bookmarksSectionTitle {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bookmarkListItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0 0 8px;
+}
+
+.bookmarkListItemButtons {
+  display: flex;
+  align-items: center;
+}
+
+/* .flexChild .select-menu__button {
+  width: "20px" !important;
+} */

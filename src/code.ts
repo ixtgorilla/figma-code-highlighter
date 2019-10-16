@@ -4,7 +4,7 @@ import changeColorUsecase from "./usecase/changeColorUsecase";
 declare function require(path: string): any;
 
 figma.showUI(__html__);
-figma.ui.resize(400, 400);
+figma.ui.resize(300, 300);
 
 //
 // Initialize
@@ -55,7 +55,7 @@ figma.ui.onmessage = msg => {
     figma.clientStorage
       .setAsync("currentSchemaAndLanguage", schemaAndLanguage)
       .then(schameAndLanguage => {
-        console.log("saved");
+        console.log("Cached.");
       });
   }
 
@@ -64,7 +64,7 @@ figma.ui.onmessage = msg => {
     figma.clientStorage
       .setAsync("bookMarkedSchemaAndLanguage", schemaAndLanguages)
       .then(values => {
-        console.log("bookmarksaved");
+        console.log("Bookmark saved.");
       });
   }
 };
