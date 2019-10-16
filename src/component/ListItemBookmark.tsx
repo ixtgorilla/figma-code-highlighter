@@ -6,7 +6,7 @@ interface Props {
   destroy: () => void;
 }
 
-const execute = (schemaAndLanguage: SchemaAndLanguage) => {
+const runHighlight = (schemaAndLanguage: SchemaAndLanguage) => {
   parent.postMessage(
     { pluginMessage: { type: "CHANGE_COLOR", schemaAndLanguage } },
     "*"
@@ -31,12 +31,12 @@ const ListItemBookmark: React.FC<Props> = ({
 
       <div className="bookmarkListItemButtons">
         <span
-          onClick={e => {
-            execute(schemaAndLanguage);
+          onClick={() => {
+            runHighlight(schemaAndLanguage);
           }}
           className="type type--neg-small-bold"
         >
-          Execute
+          Run
         </span>
         <span>
           <div

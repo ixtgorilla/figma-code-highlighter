@@ -39,7 +39,7 @@ const changeColorUsecase = (
   selections: ReadonlyArray<SceneNode>,
   schemaAndLanguage: SchemaAndLanguage
 ) => {
-  selections.map((item, index) => {
+  selections.map(item => {
     if (item.type == "TEXT") {
       let itm: TextNode = item;
 
@@ -74,7 +74,6 @@ const changeColorUsecase = (
           }
         }
       }
-
       /* 文字全体をまずデフォルトカラーで着色 */
       itm.setRangeFills(0, itm.characters.length, [
         <Paint>colorSchema[schemaAndLanguage.colorSchema]["hljs"]
@@ -89,8 +88,15 @@ const changeColorUsecase = (
 
         itm.setRangeFills(res.lengthStart, res.lengthEnd, [color]);
       });
+      figma.notify("Completed.", { timeout: 1 });
+    } else {
+      figma.notify("Please select Textbox before running.");
     }
   });
+
+  if (selections.length == 0) {
+    figma.notify("Please select Textbox before running.");
+  }
 };
 
 export default changeColorUsecase;

@@ -50,20 +50,24 @@ figma.ui.onmessage = msg => {
   if (msg.type == "CHANGE_COLOR") {
     const schemaAndLanguage: SchemaAndLanguage = msg.schemaAndLanguage;
 
-    figma.currentPage.selection &&
-      changeColorUsecase(figma.currentPage.selection, schemaAndLanguage);
-    figma.clientStorage
-      .setAsync("currentSchemaAndLanguage", schemaAndLanguage)
-      .then(schameAndLanguage => {
-        console.log("Cached.");
-      });
+    try {
+      figma.currentPage.selection &&
+        changeColorUsecase(figma.currentPage.selection, schemaAndLanguage);
+      figma.clientStorage
+        .setAsync("currentSchemaAndLanguage", schemaAndLanguage)
+        .then(() => {
+          console.log("Cached.");
+        });
+    } catch (e) {
+      figma.notify(`😭 ${e}`);
+    }
   }
 
   if (msg.type == "UPDATE_BOOKMARKS") {
     const schemaAndLanguages: SchemaAndLanguage[] = msg.schemaAndLanguages;
     figma.clientStorage
       .setAsync("bookMarkedSchemaAndLanguage", schemaAndLanguages)
-      .then(values => {
+      .then(() => {
         console.log("Bookmark saved.");
       });
   }

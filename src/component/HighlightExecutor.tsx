@@ -10,7 +10,7 @@ interface Props {
   setLanguage: (event) => void;
 }
 
-const execute = (schemaAndLanguage: SchemaAndLanguage) => {
+const runHighlight = (schemaAndLanguage: SchemaAndLanguage) => {
   parent.postMessage(
     { pluginMessage: { type: "CHANGE_COLOR", schemaAndLanguage } },
     "*"
@@ -48,11 +48,11 @@ const HighlightExecutor: React.FC<Props> = ({
       </div>
       <button
         className="button button--secondary buttonFullWidth"
-        onClick={e => {
-          execute(schemaAndLanguage);
+        onClick={() => {
+          runHighlight(schemaAndLanguage);
         }}
       >
-        Execute
+        Select Text and Run
       </button>
     </div>
   );
