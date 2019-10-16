@@ -4,6 +4,7 @@ import changeColorUsecase from "./usecase/changeColorUsecase";
 declare function require(path: string): any;
 
 figma.showUI(__html__);
+figma.ui.resize(400, 400);
 
 //
 // Initialize
