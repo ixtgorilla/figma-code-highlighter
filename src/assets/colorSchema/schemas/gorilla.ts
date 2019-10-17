@@ -61,7 +61,7 @@ const gorilla = {
   },
   'hljs-literal': {
     type: 'SOLID',
-    color: { r: 0.9019607843, g: 0.3960784314, b: 0.2 },
+    color: { r: 0.4392156863, g: 0.3764705882, b: 0.9215686275 },
   },
   'hljs-type': {
     type: 'SOLID',
