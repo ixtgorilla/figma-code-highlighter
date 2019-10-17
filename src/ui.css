@@ -43,6 +43,6 @@
   align-items: center;
 }
 
-/* .flexChild .select-menu__button {
-  width: "20px" !important;
-} */
+.cursor {
+  cursor: pointer;
+}

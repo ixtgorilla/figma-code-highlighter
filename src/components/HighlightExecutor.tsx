@@ -47,12 +47,12 @@ const HighlightExecutor: React.FC<Props> = ({
         </div>
       </div>
       <button
-        className="button button--secondary buttonFullWidth"
+        className="button button--secondary buttonFullWidth cursor"
         onClick={() => {
           runHighlight(schemaAndLanguage)
         }}
       >
-        Select Text and Run
+        Run
       </button>
     </div>
   )

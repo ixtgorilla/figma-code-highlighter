@@ -34,13 +34,13 @@ const ListItemBookmark: React.FC<Props> = ({
           onClick={() => {
             runHighlight(schemaAndLanguage)
           }}
-          className="type type--neg-small-bold"
+          className="type type--neg-small-bold cursor"
         >
           Run
         </span>
         <span>
           <div
-            className="icon icon--minus"
+            className="icon icon--minus cursor"
             onClick={() => {
               destroy()
             }}

@@ -20,7 +20,7 @@ const Bookmarks: React.FC<Props> = ({
       <div className="bookmarksSectionTitle">
         <div className="section-title">Bookmarks</div>
         <div
-          className="icon icon--plus"
+          className="icon icon--plus cursor"
           onClick={() => {
             createBookmark(schemaAndLanguage)
           }}
