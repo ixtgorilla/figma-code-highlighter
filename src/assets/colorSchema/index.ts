@@ -43,7 +43,7 @@ import github from './schemas/github'
 import githubGist from './schemas/githubGist'
 import gml from './schemas/gml'
 import googlecode from './schemas/googlecode'
-import gorillaColorSchema from './schemas/gorillaColorSchema'
+import gorilla from './schemas/gorilla'
 import grayscale from './schemas/grayscale'
 import gruvboxDark from './schemas/gruvboxDark'
 import gruvboxLight from './schemas/gruvboxLight'
@@ -60,6 +60,7 @@ import magula from './schemas/magula'
 import monoBlue from './schemas/monoBlue'
 import monokai from './schemas/monokai'
 import monokaiSublime from './schemas/monokaiSublime'
+import noctis from './schemas/noctis'
 import nord from './schemas/nord'
 import obsidian from './schemas/obsidian'
 import ocean from './schemas/ocean'
@@ -134,7 +135,7 @@ export {
   githubGist,
   gml,
   googlecode,
-  gorillaColorSchema,
+  gorilla,
   grayscale,
   gruvboxDark,
   gruvboxLight,
@@ -152,6 +153,7 @@ export {
   monokai,
   monokaiSublime,
   nord,
+  noctis,
   obsidian,
   ocean,
   paraisoDark,
