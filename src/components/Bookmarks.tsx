@@ -1,19 +1,19 @@
-import * as React from "react";
-import { SchemaAndLanguage } from "../models/SchemaAndLanguage";
-import ListItemBookmark from "./ListItemBookmark";
+import * as React from 'react'
+import { SchemaAndLanguage } from '../models/SchemaAndLanguage'
+import ListItemBookmark from './ListItemBookmark'
 
 interface Props {
-  schemaAndLanguage: SchemaAndLanguage;
-  bookmarkedSchemaAndLanguages: SchemaAndLanguage[];
-  createBookmark: (schemaAndLanguage: SchemaAndLanguage) => void;
-  destroyBookmark: (index: number) => void;
+  schemaAndLanguage: SchemaAndLanguage
+  bookmarkedSchemaAndLanguages: SchemaAndLanguage[]
+  createBookmark: (schemaAndLanguage: SchemaAndLanguage) => void
+  destroyBookmark: (index: number) => void
 }
 
 const Bookmarks: React.FC<Props> = ({
   schemaAndLanguage,
   bookmarkedSchemaAndLanguages,
   createBookmark,
-  destroyBookmark
+  destroyBookmark,
 }: Props) => {
   return (
     <div className="box">
@@ -22,7 +22,7 @@ const Bookmarks: React.FC<Props> = ({
         <div
           className="icon icon--plus"
           onClick={() => {
-            createBookmark(schemaAndLanguage);
+            createBookmark(schemaAndLanguage)
           }}
         />
       </div>
@@ -33,13 +33,13 @@ const Bookmarks: React.FC<Props> = ({
               key={index}
               schemaAndLanguage={item}
               destroy={() => {
-                destroyBookmark(index);
+                destroyBookmark(index)
               }}
             />
-          );
+          )
         })}
     </div>
-  );
-};
+  )
+}
 
-export default Bookmarks;
+export default Bookmarks

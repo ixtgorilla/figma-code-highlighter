@@ -1,219 +1,219 @@
 const atelierForestLight = {
   hljs: {
-    type: "SOLID",
+    type: 'SOLID',
     color: {
       r: 0.40784313725490196,
       g: 0.3803921568627451,
-      b: 0.3686274509803922
-    }
+      b: 0.3686274509803922,
+    },
   },
-  "hljs-comment": {
-    type: "SOLID",
+  'hljs-comment': {
+    type: 'SOLID',
     color: {
       r: 0.4627450980392157,
       g: 0.43137254901960786,
-      b: 0.4196078431372549
-    }
+      b: 0.4196078431372549,
+    },
   },
-  "hljs-quote": {
-    type: "SOLID",
+  'hljs-quote': {
+    type: 'SOLID',
     color: {
       r: 0.4627450980392157,
       g: 0.43137254901960786,
-      b: 0.4196078431372549
-    }
+      b: 0.4196078431372549,
+    },
   },
-  "hljs-variable": {
-    type: "SOLID",
+  'hljs-variable': {
+    type: 'SOLID',
     color: {
       r: 0.9490196078431372,
       g: 0.17254901960784313,
-      b: 0.25098039215686274
-    }
+      b: 0.25098039215686274,
+    },
   },
-  "hljs-template-variable": {
-    type: "SOLID",
+  'hljs-template-variable': {
+    type: 'SOLID',
     color: {
       r: 0.9490196078431372,
       g: 0.17254901960784313,
-      b: 0.25098039215686274
-    }
+      b: 0.25098039215686274,
+    },
   },
-  "hljs-attribute": {
-    type: "SOLID",
+  'hljs-attribute': {
+    type: 'SOLID',
     color: {
       r: 0.9490196078431372,
       g: 0.17254901960784313,
-      b: 0.25098039215686274
-    }
+      b: 0.25098039215686274,
+    },
   },
-  "hljs-tag": {
-    type: "SOLID",
+  'hljs-tag': {
+    type: 'SOLID',
     color: {
       r: 0.9490196078431372,
       g: 0.17254901960784313,
-      b: 0.25098039215686274
-    }
+      b: 0.25098039215686274,
+    },
   },
-  "hljs-name": {
-    type: "SOLID",
+  'hljs-name': {
+    type: 'SOLID',
     color: {
       r: 0.9490196078431372,
       g: 0.17254901960784313,
-      b: 0.25098039215686274
-    }
+      b: 0.25098039215686274,
+    },
   },
-  "hljs-regexp": {
-    type: "SOLID",
+  'hljs-regexp': {
+    type: 'SOLID',
     color: {
       r: 0.9490196078431372,
       g: 0.17254901960784313,
-      b: 0.25098039215686274
-    }
+      b: 0.25098039215686274,
+    },
   },
-  "hljs-link": {
-    type: "SOLID",
+  'hljs-link': {
+    type: 'SOLID',
     color: {
       r: 0.9490196078431372,
       g: 0.17254901960784313,
-      b: 0.25098039215686274
-    }
+      b: 0.25098039215686274,
+    },
   },
-  "hljs-selector-id": {
-    type: "SOLID",
+  'hljs-selector-id': {
+    type: 'SOLID',
     color: {
       r: 0.9490196078431372,
       g: 0.17254901960784313,
-      b: 0.25098039215686274
-    }
+      b: 0.25098039215686274,
+    },
   },
-  "hljs-selector-class": {
-    type: "SOLID",
+  'hljs-selector-class': {
+    type: 'SOLID',
     color: {
       r: 0.9490196078431372,
       g: 0.17254901960784313,
-      b: 0.25098039215686274
-    }
+      b: 0.25098039215686274,
+    },
   },
-  "hljs-number": {
-    type: "SOLID",
+  'hljs-number': {
+    type: 'SOLID',
     color: {
       r: 0.8745098039215686,
       g: 0.3254901960784314,
-      b: 0.12549019607843137
-    }
+      b: 0.12549019607843137,
+    },
   },
-  "hljs-meta": {
-    type: "SOLID",
+  'hljs-meta': {
+    type: 'SOLID',
     color: {
       r: 0.8745098039215686,
       g: 0.3254901960784314,
-      b: 0.12549019607843137
-    }
+      b: 0.12549019607843137,
+    },
   },
-  "hljs-built_in": {
-    type: "SOLID",
+  'hljs-built_in': {
+    type: 'SOLID',
     color: {
       r: 0.8745098039215686,
       g: 0.3254901960784314,
-      b: 0.12549019607843137
-    }
+      b: 0.12549019607843137,
+    },
   },
-  "hljs-builtin-name": {
-    type: "SOLID",
+  'hljs-builtin-name': {
+    type: 'SOLID',
     color: {
       r: 0.8745098039215686,
       g: 0.3254901960784314,
-      b: 0.12549019607843137
-    }
+      b: 0.12549019607843137,
+    },
   },
-  "hljs-literal": {
-    type: "SOLID",
+  'hljs-literal': {
+    type: 'SOLID',
     color: {
       r: 0.8745098039215686,
       g: 0.3254901960784314,
-      b: 0.12549019607843137
-    }
+      b: 0.12549019607843137,
+    },
   },
-  "hljs-type": {
-    type: "SOLID",
+  'hljs-type': {
+    type: 'SOLID',
     color: {
       r: 0.8745098039215686,
       g: 0.3254901960784314,
-      b: 0.12549019607843137
-    }
+      b: 0.12549019607843137,
+    },
   },
-  "hljs-params": {
-    type: "SOLID",
+  'hljs-params': {
+    type: 'SOLID',
     color: {
       r: 0.8745098039215686,
       g: 0.3254901960784314,
-      b: 0.12549019607843137
-    }
+      b: 0.12549019607843137,
+    },
   },
-  "hljs-string": {
-    type: "SOLID",
+  'hljs-string': {
+    type: 'SOLID',
     color: {
       r: 0.4823529411764706,
       g: 0.592156862745098,
-      b: 0.14901960784313725
-    }
+      b: 0.14901960784313725,
+    },
   },
-  "hljs-symbol": {
-    type: "SOLID",
+  'hljs-symbol': {
+    type: 'SOLID',
     color: {
       r: 0.4823529411764706,
       g: 0.592156862745098,
-      b: 0.14901960784313725
-    }
+      b: 0.14901960784313725,
+    },
   },
-  "hljs-bullet": {
-    type: "SOLID",
+  'hljs-bullet': {
+    type: 'SOLID',
     color: {
       r: 0.4823529411764706,
       g: 0.592156862745098,
-      b: 0.14901960784313725
-    }
+      b: 0.14901960784313725,
+    },
   },
-  "hljs-title": {
-    type: "SOLID",
+  'hljs-title': {
+    type: 'SOLID',
     color: {
       r: 0.25098039215686274,
       g: 0.49411764705882355,
-      b: 0.9058823529411765
-    }
+      b: 0.9058823529411765,
+    },
   },
-  "hljs-section": {
-    type: "SOLID",
+  'hljs-section': {
+    type: 'SOLID',
     color: {
       r: 0.25098039215686274,
       g: 0.49411764705882355,
-      b: 0.9058823529411765
-    }
+      b: 0.9058823529411765,
+    },
   },
-  "hljs-keyword": {
-    type: "SOLID",
-    color: { r: 0.4, g: 0.4, b: 0.9176470588235294 }
+  'hljs-keyword': {
+    type: 'SOLID',
+    color: { r: 0.4, g: 0.4, b: 0.9176470588235294 },
   },
-  "hljs-selector-tag": {
-    type: "SOLID",
-    color: { r: 0.4, g: 0.4, b: 0.9176470588235294 }
+  'hljs-selector-tag': {
+    type: 'SOLID',
+    color: { r: 0.4, g: 0.4, b: 0.9176470588235294 },
   },
-  "hljs-emphasis": {
-    type: "SOLID",
+  'hljs-emphasis': {
+    type: 'SOLID',
     color: {
       r: 0.40784313725490196,
       g: 0.3803921568627451,
-      b: 0.3686274509803922
-    }
+      b: 0.3686274509803922,
+    },
   },
-  "hljs-strong": {
-    type: "SOLID",
+  'hljs-strong': {
+    type: 'SOLID',
     color: {
       r: 0.40784313725490196,
       g: 0.3803921568627451,
-      b: 0.3686274509803922
-    }
-  }
-};
-export default atelierForestLight;
+      b: 0.3686274509803922,
+    },
+  },
+}
+export default atelierForestLight

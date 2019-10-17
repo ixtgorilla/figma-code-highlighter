@@ -1,256 +1,256 @@
 const gml = {
   hljs: {
-    type: "SOLID",
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-keywords": {
-    type: "SOLID",
-    color: { r: 1, g: 0.7215686274509804, b: 0.44313725490196076 }
+  'hljs-keywords': {
+    type: 'SOLID',
+    color: { r: 1, g: 0.7215686274509804, b: 0.44313725490196076 },
   },
-  "hljs-built_in": {
-    type: "SOLID",
-    color: { r: 1, g: 0.7215686274509804, b: 0.44313725490196076 }
+  'hljs-built_in': {
+    type: 'SOLID',
+    color: { r: 1, g: 0.7215686274509804, b: 0.44313725490196076 },
   },
-  "hljs-literal": {
-    type: "SOLID",
-    color: { r: 1, g: 0.5019607843137255, b: 0.5019607843137255 }
+  'hljs-literal': {
+    type: 'SOLID',
+    color: { r: 1, g: 0.5019607843137255, b: 0.5019607843137255 },
   },
-  "hljs-symbol": {
-    type: "SOLID",
+  'hljs-symbol': {
+    type: 'SOLID',
     color: {
       r: 0.34509803921568627,
       g: 0.8980392156862745,
-      b: 0.35294117647058826
-    }
+      b: 0.35294117647058826,
+    },
   },
-  "hljs-comment": {
-    type: "SOLID",
-    color: { r: 0.3568627450980392, g: 0.6, b: 0.3568627450980392 }
+  'hljs-comment': {
+    type: 'SOLID',
+    color: { r: 0.3568627450980392, g: 0.6, b: 0.3568627450980392 },
   },
-  "hljs-string": { type: "SOLID", color: { r: 1, g: 1, b: 0 } },
-  "hljs-number": {
-    type: "SOLID",
-    color: { r: 1, g: 0.5019607843137255, b: 0.5019607843137255 }
+  'hljs-string': { type: 'SOLID', color: { r: 1, g: 1, b: 0 } },
+  'hljs-number': {
+    type: 'SOLID',
+    color: { r: 1, g: 0.5019607843137255, b: 0.5019607843137255 },
   },
-  "hljs-attribute": {
-    type: "SOLID",
+  'hljs-attribute': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-selector-tag": {
-    type: "SOLID",
+  'hljs-selector-tag': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-doctag": {
-    type: "SOLID",
+  'hljs-doctag': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-name": {
-    type: "SOLID",
+  'hljs-name': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-bullet": {
-    type: "SOLID",
+  'hljs-bullet': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-code": {
-    type: "SOLID",
+  'hljs-code': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-addition": {
-    type: "SOLID",
+  'hljs-addition': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-regexp": {
-    type: "SOLID",
+  'hljs-regexp': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-variable": {
-    type: "SOLID",
+  'hljs-variable': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-template-variable": {
-    type: "SOLID",
+  'hljs-template-variable': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-link": {
-    type: "SOLID",
+  'hljs-link': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-selector-attr": {
-    type: "SOLID",
+  'hljs-selector-attr': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-selector-pseudo": {
-    type: "SOLID",
+  'hljs-selector-pseudo': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-type": {
-    type: "SOLID",
+  'hljs-type': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-selector-id": {
-    type: "SOLID",
+  'hljs-selector-id': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-selector-class": {
-    type: "SOLID",
+  'hljs-selector-class': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-quote": {
-    type: "SOLID",
+  'hljs-quote': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-template-tag": {
-    type: "SOLID",
+  'hljs-template-tag': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-deletion": {
-    type: "SOLID",
+  'hljs-deletion': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-title": {
-    type: "SOLID",
+  'hljs-title': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-section": {
-    type: "SOLID",
+  'hljs-section': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-function": {
-    type: "SOLID",
+  'hljs-function': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-meta-keyword": {
-    type: "SOLID",
+  'hljs-meta-keyword': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-meta": {
-    type: "SOLID",
+  'hljs-meta': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-subst": {
-    type: "SOLID",
+  'hljs-subst': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-emphasis": {
-    type: "SOLID",
+  'hljs-emphasis': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
+      b: 0.7529411764705882,
+    },
   },
-  "hljs-strong": {
-    type: "SOLID",
+  'hljs-strong': {
+    type: 'SOLID',
     color: {
       r: 0.7529411764705882,
       g: 0.7529411764705882,
-      b: 0.7529411764705882
-    }
-  }
-};
-export default gml;
+      b: 0.7529411764705882,
+    },
+  },
+}
+export default gml

@@ -1,4 +1,4 @@
 export interface SchemaAndLanguage {
-  language: string;
-  colorSchema: string;
+  language: string
+  colorSchema: string
 }

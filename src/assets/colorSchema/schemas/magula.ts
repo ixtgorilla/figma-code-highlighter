@@ -1,235 +1,235 @@
 const magula = {
   hljs: {
-    type: "SOLID",
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-subst": {
-    type: "SOLID",
+  'hljs-subst': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-string": {
-    type: "SOLID",
+  'hljs-string': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-title": {
-    type: "SOLID",
+  'hljs-title': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-symbol": {
-    type: "SOLID",
+  'hljs-symbol': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-bullet": {
-    type: "SOLID",
+  'hljs-bullet': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-attribute": {
-    type: "SOLID",
+  'hljs-attribute': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-addition": {
-    type: "SOLID",
+  'hljs-addition': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-variable": {
-    type: "SOLID",
+  'hljs-variable': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-template-tag": {
-    type: "SOLID",
+  'hljs-template-tag': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-template-variable": {
-    type: "SOLID",
+  'hljs-template-variable': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-comment": {
-    type: "SOLID",
+  'hljs-comment': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-quote": {
-    type: "SOLID",
+  'hljs-quote': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-number": {
-    type: "SOLID",
+  'hljs-number': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-regexp": {
-    type: "SOLID",
+  'hljs-regexp': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-literal": {
-    type: "SOLID",
+  'hljs-literal': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-type": {
-    type: "SOLID",
+  'hljs-type': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-link": {
-    type: "SOLID",
+  'hljs-link': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-deletion": {
-    type: "SOLID",
+  'hljs-deletion': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-meta": {
-    type: "SOLID",
+  'hljs-meta': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-keyword": {
-    type: "SOLID",
+  'hljs-keyword': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-selector-tag": {
-    type: "SOLID",
+  'hljs-selector-tag': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-doctag": {
-    type: "SOLID",
+  'hljs-doctag': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-section": {
-    type: "SOLID",
+  'hljs-section': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-built_in": {
-    type: "SOLID",
+  'hljs-built_in': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-tag": {
-    type: "SOLID",
+  'hljs-tag': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-name": {
-    type: "SOLID",
+  'hljs-name': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-emphasis": {
-    type: "SOLID",
+  'hljs-emphasis': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
+      b: 0.9568627450980393,
+    },
   },
-  "hljs-strong": {
-    type: "SOLID",
+  'hljs-strong': {
+    type: 'SOLID',
     color: {
       r: 0.9568627450980393,
       g: 0.9568627450980393,
-      b: 0.9568627450980393
-    }
-  }
-};
-export default magula;
+      b: 0.9568627450980393,
+    },
+  },
+}
+export default magula

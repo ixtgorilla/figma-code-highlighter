@@ -1,9 +1,9 @@
-import * as React from "react";
+import * as React from 'react'
 
 interface Props {
-  current: string;
-  collection: string[];
-  onChange: (event) => void;
+  current: string
+  collection: string[]
+  onChange: (event) => void
 }
 
 const Select: React.FC<Props> = ({ current, collection, onChange }: Props) => {
@@ -11,7 +11,7 @@ const Select: React.FC<Props> = ({ current, collection, onChange }: Props) => {
     <select
       className="select-menu__button"
       onChange={event => {
-        onChange(event);
+        onChange(event)
       }}
     >
       {collection.map((item, index) => {
@@ -23,10 +23,10 @@ const Select: React.FC<Props> = ({ current, collection, onChange }: Props) => {
           <option value={item} key={index}>
             {item}
           </option>
-        );
+        )
       })}
     </select>
-  );
-};
+  )
+}
 
-export default Select;
+export default Select

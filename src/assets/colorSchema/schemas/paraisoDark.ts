@@ -1,243 +1,243 @@
 const paraisoDark = {
   hljs: {
-    type: "SOLID",
+    type: 'SOLID',
     color: {
       r: 0.6392156862745098,
       g: 0.6196078431372549,
-      b: 0.6078431372549019
-    }
+      b: 0.6078431372549019,
+    },
   },
-  "hljs-comment": {
-    type: "SOLID",
+  'hljs-comment': {
+    type: 'SOLID',
     color: {
       r: 0.5529411764705883,
       g: 0.5254901960784314,
-      b: 0.5294117647058824
-    }
+      b: 0.5294117647058824,
+    },
   },
-  "hljs-quote": {
-    type: "SOLID",
+  'hljs-quote': {
+    type: 'SOLID',
     color: {
       r: 0.5529411764705883,
       g: 0.5254901960784314,
-      b: 0.5294117647058824
-    }
+      b: 0.5294117647058824,
+    },
   },
-  "hljs-variable": {
-    type: "SOLID",
+  'hljs-variable': {
+    type: 'SOLID',
     color: {
       r: 0.9372549019607843,
       g: 0.3803921568627451,
-      b: 0.3333333333333333
-    }
+      b: 0.3333333333333333,
+    },
   },
-  "hljs-template-variable": {
-    type: "SOLID",
+  'hljs-template-variable': {
+    type: 'SOLID',
     color: {
       r: 0.9372549019607843,
       g: 0.3803921568627451,
-      b: 0.3333333333333333
-    }
+      b: 0.3333333333333333,
+    },
   },
-  "hljs-tag": {
-    type: "SOLID",
+  'hljs-tag': {
+    type: 'SOLID',
     color: {
       r: 0.9372549019607843,
       g: 0.3803921568627451,
-      b: 0.3333333333333333
-    }
+      b: 0.3333333333333333,
+    },
   },
-  "hljs-name": {
-    type: "SOLID",
+  'hljs-name': {
+    type: 'SOLID',
     color: {
       r: 0.9372549019607843,
       g: 0.3803921568627451,
-      b: 0.3333333333333333
-    }
+      b: 0.3333333333333333,
+    },
   },
-  "hljs-selector-id": {
-    type: "SOLID",
+  'hljs-selector-id': {
+    type: 'SOLID',
     color: {
       r: 0.9372549019607843,
       g: 0.3803921568627451,
-      b: 0.3333333333333333
-    }
+      b: 0.3333333333333333,
+    },
   },
-  "hljs-selector-class": {
-    type: "SOLID",
+  'hljs-selector-class': {
+    type: 'SOLID',
     color: {
       r: 0.9372549019607843,
       g: 0.3803921568627451,
-      b: 0.3333333333333333
-    }
+      b: 0.3333333333333333,
+    },
   },
-  "hljs-regexp": {
-    type: "SOLID",
+  'hljs-regexp': {
+    type: 'SOLID',
     color: {
       r: 0.9372549019607843,
       g: 0.3803921568627451,
-      b: 0.3333333333333333
-    }
+      b: 0.3333333333333333,
+    },
   },
-  "hljs-link": {
-    type: "SOLID",
+  'hljs-link': {
+    type: 'SOLID',
     color: {
       r: 0.9372549019607843,
       g: 0.3803921568627451,
-      b: 0.3333333333333333
-    }
+      b: 0.3333333333333333,
+    },
   },
-  "hljs-meta": {
-    type: "SOLID",
+  'hljs-meta': {
+    type: 'SOLID',
     color: {
       r: 0.9372549019607843,
       g: 0.3803921568627451,
-      b: 0.3333333333333333
-    }
+      b: 0.3333333333333333,
+    },
   },
-  "hljs-number": {
-    type: "SOLID",
+  'hljs-number': {
+    type: 'SOLID',
     color: {
       r: 0.9764705882352941,
       g: 0.6078431372549019,
-      b: 0.08235294117647059
-    }
+      b: 0.08235294117647059,
+    },
   },
-  "hljs-built_in": {
-    type: "SOLID",
+  'hljs-built_in': {
+    type: 'SOLID',
     color: {
       r: 0.9764705882352941,
       g: 0.6078431372549019,
-      b: 0.08235294117647059
-    }
+      b: 0.08235294117647059,
+    },
   },
-  "hljs-builtin-name": {
-    type: "SOLID",
+  'hljs-builtin-name': {
+    type: 'SOLID',
     color: {
       r: 0.9764705882352941,
       g: 0.6078431372549019,
-      b: 0.08235294117647059
-    }
+      b: 0.08235294117647059,
+    },
   },
-  "hljs-literal": {
-    type: "SOLID",
+  'hljs-literal': {
+    type: 'SOLID',
     color: {
       r: 0.9764705882352941,
       g: 0.6078431372549019,
-      b: 0.08235294117647059
-    }
+      b: 0.08235294117647059,
+    },
   },
-  "hljs-type": {
-    type: "SOLID",
+  'hljs-type': {
+    type: 'SOLID',
     color: {
       r: 0.9764705882352941,
       g: 0.6078431372549019,
-      b: 0.08235294117647059
-    }
+      b: 0.08235294117647059,
+    },
   },
-  "hljs-params": {
-    type: "SOLID",
+  'hljs-params': {
+    type: 'SOLID',
     color: {
       r: 0.9764705882352941,
       g: 0.6078431372549019,
-      b: 0.08235294117647059
-    }
+      b: 0.08235294117647059,
+    },
   },
-  "hljs-deletion": {
-    type: "SOLID",
+  'hljs-deletion': {
+    type: 'SOLID',
     color: {
       r: 0.9764705882352941,
       g: 0.6078431372549019,
-      b: 0.08235294117647059
-    }
+      b: 0.08235294117647059,
+    },
   },
-  "hljs-title": {
-    type: "SOLID",
+  'hljs-title': {
+    type: 'SOLID',
     color: {
       r: 0.996078431372549,
       g: 0.7686274509803922,
-      b: 0.09411764705882353
-    }
+      b: 0.09411764705882353,
+    },
   },
-  "hljs-section": {
-    type: "SOLID",
+  'hljs-section': {
+    type: 'SOLID',
     color: {
       r: 0.996078431372549,
       g: 0.7686274509803922,
-      b: 0.09411764705882353
-    }
+      b: 0.09411764705882353,
+    },
   },
-  "hljs-attribute": {
-    type: "SOLID",
+  'hljs-attribute': {
+    type: 'SOLID',
     color: {
       r: 0.996078431372549,
       g: 0.7686274509803922,
-      b: 0.09411764705882353
-    }
+      b: 0.09411764705882353,
+    },
   },
-  "hljs-string": {
-    type: "SOLID",
+  'hljs-string': {
+    type: 'SOLID',
     color: {
       r: 0.2823529411764706,
       g: 0.7137254901960784,
-      b: 0.5215686274509804
-    }
+      b: 0.5215686274509804,
+    },
   },
-  "hljs-symbol": {
-    type: "SOLID",
+  'hljs-symbol': {
+    type: 'SOLID',
     color: {
       r: 0.2823529411764706,
       g: 0.7137254901960784,
-      b: 0.5215686274509804
-    }
+      b: 0.5215686274509804,
+    },
   },
-  "hljs-bullet": {
-    type: "SOLID",
+  'hljs-bullet': {
+    type: 'SOLID',
     color: {
       r: 0.2823529411764706,
       g: 0.7137254901960784,
-      b: 0.5215686274509804
-    }
+      b: 0.5215686274509804,
+    },
   },
-  "hljs-addition": {
-    type: "SOLID",
+  'hljs-addition': {
+    type: 'SOLID',
     color: {
       r: 0.2823529411764706,
       g: 0.7137254901960784,
-      b: 0.5215686274509804
-    }
+      b: 0.5215686274509804,
+    },
   },
-  "hljs-keyword": {
-    type: "SOLID",
+  'hljs-keyword': {
+    type: 'SOLID',
     color: {
       r: 0.5058823529411764,
       g: 0.3568627450980392,
-      b: 0.6431372549019608
-    }
+      b: 0.6431372549019608,
+    },
   },
-  "hljs-selector-tag": {
-    type: "SOLID",
+  'hljs-selector-tag': {
+    type: 'SOLID',
     color: {
       r: 0.5058823529411764,
       g: 0.3568627450980392,
-      b: 0.6431372549019608
-    }
+      b: 0.6431372549019608,
+    },
   },
-  "hljs-emphasis": {
-    type: "SOLID",
+  'hljs-emphasis': {
+    type: 'SOLID',
     color: {
       r: 0.6392156862745098,
       g: 0.6196078431372549,
-      b: 0.6078431372549019
-    }
+      b: 0.6078431372549019,
+    },
   },
-  "hljs-strong": {
-    type: "SOLID",
+  'hljs-strong': {
+    type: 'SOLID',
     color: {
       r: 0.6392156862745098,
       g: 0.6196078431372549,
-      b: 0.6078431372549019
-    }
-  }
-};
-export default paraisoDark;
+      b: 0.6078431372549019,
+    },
+  },
+}
+export default paraisoDark

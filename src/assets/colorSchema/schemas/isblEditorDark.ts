@@ -1,279 +1,279 @@
 const isblEditorDark = {
   hljs: {
-    type: "SOLID",
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-subst": {
-    type: "SOLID",
+  'hljs-subst': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-comment": {
-    type: "SOLID",
+  'hljs-comment': {
+    type: 'SOLID',
     color: {
       r: 0.7098039215686275,
       g: 0.7098039215686275,
-      b: 0.7098039215686275
-    }
+      b: 0.7098039215686275,
+    },
   },
-  "hljs-keyword": {
-    type: "SOLID",
+  'hljs-keyword': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-attribute": {
-    type: "SOLID",
+  'hljs-attribute': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-selector-tag": {
-    type: "SOLID",
+  'hljs-selector-tag': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-meta-keyword": {
-    type: "SOLID",
+  'hljs-meta-keyword': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-doctag": {
-    type: "SOLID",
+  'hljs-doctag': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-name": {
-    type: "SOLID",
+  'hljs-name': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-string": {
-    type: "SOLID",
+  'hljs-string': {
+    type: 'SOLID',
     color: {
       r: 0.592156862745098,
       g: 0.7490196078431373,
-      b: 0.050980392156862744
-    }
+      b: 0.050980392156862744,
+    },
   },
-  "hljs-type": {
-    type: "SOLID",
+  'hljs-type': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-number": {
-    type: "SOLID",
+  'hljs-number': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-selector-id": {
-    type: "SOLID",
+  'hljs-selector-id': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-selector-class": {
-    type: "SOLID",
+  'hljs-selector-class': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-quote": {
-    type: "SOLID",
+  'hljs-quote': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-template-tag": {
-    type: "SOLID",
+  'hljs-template-tag': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-deletion": {
-    type: "SOLID",
+  'hljs-deletion': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-title": {
-    type: "SOLID",
+  'hljs-title': {
+    type: 'SOLID',
     color: {
       r: 0.8745098039215686,
       g: 0.2784313725490196,
-      b: 0.11764705882352941
-    }
+      b: 0.11764705882352941,
+    },
   },
-  "hljs-section": {
-    type: "SOLID",
+  'hljs-section': {
+    type: 'SOLID',
     color: {
       r: 0.8745098039215686,
       g: 0.2784313725490196,
-      b: 0.11764705882352941
-    }
+      b: 0.11764705882352941,
+    },
   },
-  "hljs-title>hljs-built_in": {
-    type: "SOLID",
+  'hljs-title>hljs-built_in': {
+    type: 'SOLID',
     color: {
       r: 0.5058823529411764,
       g: 0.7372549019607844,
-      b: 0.9137254901960784
-    }
+      b: 0.9137254901960784,
+    },
   },
-  "hljs-regexp": {
-    type: "SOLID",
+  'hljs-regexp': {
+    type: 'SOLID',
     color: {
       r: 0.8862745098039215,
       g: 0.7764705882352941,
-      b: 0.5882352941176471
-    }
+      b: 0.5882352941176471,
+    },
   },
-  "hljs-symbol": {
-    type: "SOLID",
+  'hljs-symbol': {
+    type: 'SOLID',
     color: {
       r: 0.8862745098039215,
       g: 0.7764705882352941,
-      b: 0.5882352941176471
-    }
+      b: 0.5882352941176471,
+    },
   },
-  "hljs-variable": {
-    type: "SOLID",
+  'hljs-variable': {
+    type: 'SOLID',
     color: {
       r: 0.8862745098039215,
       g: 0.7764705882352941,
-      b: 0.5882352941176471
-    }
+      b: 0.5882352941176471,
+    },
   },
-  "hljs-template-variable": {
-    type: "SOLID",
+  'hljs-template-variable': {
+    type: 'SOLID',
     color: {
       r: 0.8862745098039215,
       g: 0.7764705882352941,
-      b: 0.5882352941176471
-    }
+      b: 0.5882352941176471,
+    },
   },
-  "hljs-link": {
-    type: "SOLID",
+  'hljs-link': {
+    type: 'SOLID',
     color: {
       r: 0.8862745098039215,
       g: 0.7764705882352941,
-      b: 0.5882352941176471
-    }
+      b: 0.5882352941176471,
+    },
   },
-  "hljs-selector-attr": {
-    type: "SOLID",
+  'hljs-selector-attr': {
+    type: 'SOLID',
     color: {
       r: 0.8862745098039215,
       g: 0.7764705882352941,
-      b: 0.5882352941176471
-    }
+      b: 0.5882352941176471,
+    },
   },
-  "hljs-selector-pseudo": {
-    type: "SOLID",
+  'hljs-selector-pseudo': {
+    type: 'SOLID',
     color: {
       r: 0.8862745098039215,
       g: 0.7764705882352941,
-      b: 0.5882352941176471
-    }
+      b: 0.5882352941176471,
+    },
   },
-  "hljs-built_in": {
-    type: "SOLID",
+  'hljs-built_in': {
+    type: 'SOLID',
     color: {
       r: 0.592156862745098,
       g: 0.7490196078431373,
-      b: 0.050980392156862744
-    }
+      b: 0.050980392156862744,
+    },
   },
-  "hljs-literal": {
-    type: "SOLID",
+  'hljs-literal': {
+    type: 'SOLID',
     color: {
       r: 0.592156862745098,
       g: 0.7490196078431373,
-      b: 0.050980392156862744
-    }
+      b: 0.050980392156862744,
+    },
   },
-  "hljs-bullet": {
-    type: "SOLID",
-    color: { r: 0.2235294117647059, g: 0.45098039215686275, b: 0 }
+  'hljs-bullet': {
+    type: 'SOLID',
+    color: { r: 0.2235294117647059, g: 0.45098039215686275, b: 0 },
   },
-  "hljs-code": {
-    type: "SOLID",
-    color: { r: 0.2235294117647059, g: 0.45098039215686275, b: 0 }
+  'hljs-code': {
+    type: 'SOLID',
+    color: { r: 0.2235294117647059, g: 0.45098039215686275, b: 0 },
   },
-  "hljs-addition": {
-    type: "SOLID",
-    color: { r: 0.2235294117647059, g: 0.45098039215686275, b: 0 }
+  'hljs-addition': {
+    type: 'SOLID',
+    color: { r: 0.2235294117647059, g: 0.45098039215686275, b: 0 },
   },
-  "hljs-class": {
-    type: "SOLID",
+  'hljs-class': {
+    type: 'SOLID',
     color: {
       r: 0.807843137254902,
       g: 0.615686274509804,
-      b: 0.30196078431372547
-    }
+      b: 0.30196078431372547,
+    },
   },
-  "hljs-meta": {
-    type: "SOLID",
-    color: { r: 0.12156862745098039, g: 0.44313725490196076, b: 0.6 }
+  'hljs-meta': {
+    type: 'SOLID',
+    color: { r: 0.12156862745098039, g: 0.44313725490196076, b: 0.6 },
   },
-  "hljs-meta-string": {
-    type: "SOLID",
-    color: { r: 0.30196078431372547, g: 0.6, b: 0.7490196078431373 }
+  'hljs-meta-string': {
+    type: 'SOLID',
+    color: { r: 0.30196078431372547, g: 0.6, b: 0.7490196078431373 },
   },
-  "hljs-emphasis": {
-    type: "SOLID",
+  'hljs-emphasis': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
+      b: 0.9411764705882353,
+    },
   },
-  "hljs-strong": {
-    type: "SOLID",
+  'hljs-strong': {
+    type: 'SOLID',
     color: {
       r: 0.9411764705882353,
       g: 0.9411764705882353,
-      b: 0.9411764705882353
-    }
-  }
-};
-export default isblEditorDark;
+      b: 0.9411764705882353,
+    },
+  },
+}
+export default isblEditorDark

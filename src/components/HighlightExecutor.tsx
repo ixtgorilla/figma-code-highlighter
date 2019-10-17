@@ -1,26 +1,26 @@
-import * as React from "react";
-import { SchemaAndLanguage } from "../models/SchemaAndLanguage";
-import colorSchemaList from "../consts/colorSchemalist";
-import languageList from "../consts/languagelist";
-import Select from "./Select";
+import * as React from 'react'
+import { SchemaAndLanguage } from '../models/SchemaAndLanguage'
+import colorSchemaList from '../consts/colorSchemalist'
+import languageList from '../consts/languagelist'
+import Select from './Select'
 
 interface Props {
-  schemaAndLanguage: SchemaAndLanguage;
-  setColorSchema: (event) => void;
-  setLanguage: (event) => void;
+  schemaAndLanguage: SchemaAndLanguage
+  setColorSchema: (event) => void
+  setLanguage: (event) => void
 }
 
 const runHighlight = (schemaAndLanguage: SchemaAndLanguage) => {
   parent.postMessage(
-    { pluginMessage: { type: "CHANGE_COLOR", schemaAndLanguage } },
-    "*"
-  );
-};
+    { pluginMessage: { type: 'CHANGE_COLOR', schemaAndLanguage } },
+    '*'
+  )
+}
 
 const HighlightExecutor: React.FC<Props> = ({
   schemaAndLanguage,
   setColorSchema,
-  setLanguage
+  setLanguage,
 }: Props) => {
   return (
     <div className="box">
@@ -31,7 +31,7 @@ const HighlightExecutor: React.FC<Props> = ({
             current={schemaAndLanguage.colorSchema}
             collection={colorSchemaList}
             onChange={event => {
-              setColorSchema(event);
+              setColorSchema(event)
             }}
           />
         </div>
@@ -41,7 +41,7 @@ const HighlightExecutor: React.FC<Props> = ({
             current={schemaAndLanguage.language}
             collection={languageList}
             onChange={event => {
-              setLanguage(event);
+              setLanguage(event)
             }}
           />
         </div>
@@ -49,13 +49,13 @@ const HighlightExecutor: React.FC<Props> = ({
       <button
         className="button button--secondary buttonFullWidth"
         onClick={() => {
-          runHighlight(schemaAndLanguage);
+          runHighlight(schemaAndLanguage)
         }}
       >
         Select Text and Run
       </button>
     </div>
-  );
-};
+  )
+}
 
-export default HighlightExecutor;
+export default HighlightExecutor

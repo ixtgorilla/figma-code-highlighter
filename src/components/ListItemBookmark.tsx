@@ -1,21 +1,21 @@
-import * as React from "react";
-import { SchemaAndLanguage } from "../models/SchemaAndLanguage";
+import * as React from 'react'
+import { SchemaAndLanguage } from '../models/SchemaAndLanguage'
 
 interface Props {
-  schemaAndLanguage: SchemaAndLanguage;
-  destroy: () => void;
+  schemaAndLanguage: SchemaAndLanguage
+  destroy: () => void
 }
 
 const runHighlight = (schemaAndLanguage: SchemaAndLanguage) => {
   parent.postMessage(
-    { pluginMessage: { type: "CHANGE_COLOR", schemaAndLanguage } },
-    "*"
-  );
-};
+    { pluginMessage: { type: 'CHANGE_COLOR', schemaAndLanguage } },
+    '*'
+  )
+}
 
 const ListItemBookmark: React.FC<Props> = ({
   schemaAndLanguage,
-  destroy
+  destroy,
 }: Props) => {
   return (
     <div className="bookmarkListItem">
@@ -32,7 +32,7 @@ const ListItemBookmark: React.FC<Props> = ({
       <div className="bookmarkListItemButtons">
         <span
           onClick={() => {
-            runHighlight(schemaAndLanguage);
+            runHighlight(schemaAndLanguage)
           }}
           className="type type--neg-small-bold"
         >
@@ -42,13 +42,13 @@ const ListItemBookmark: React.FC<Props> = ({
           <div
             className="icon icon--minus"
             onClick={() => {
-              destroy();
+              destroy()
             }}
           />
         </span>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default ListItemBookmark;
+export default ListItemBookmark

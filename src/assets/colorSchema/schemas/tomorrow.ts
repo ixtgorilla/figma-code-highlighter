@@ -1,223 +1,223 @@
 const tomorrow = {
   hljs: {
-    type: "SOLID",
+    type: 'SOLID',
     color: {
       r: 0.30196078431372547,
       g: 0.30196078431372547,
-      b: 0.2980392156862745
-    }
+      b: 0.2980392156862745,
+    },
   },
-  "hljs-comment": {
-    type: "SOLID",
+  'hljs-comment': {
+    type: 'SOLID',
     color: {
       r: 0.5568627450980392,
       g: 0.5647058823529412,
-      b: 0.5490196078431373
-    }
+      b: 0.5490196078431373,
+    },
   },
-  "hljs-quote": {
-    type: "SOLID",
+  'hljs-quote': {
+    type: 'SOLID',
     color: {
       r: 0.5568627450980392,
       g: 0.5647058823529412,
-      b: 0.5490196078431373
-    }
+      b: 0.5490196078431373,
+    },
   },
-  "hljs-variable": {
-    type: "SOLID",
+  'hljs-variable': {
+    type: 'SOLID',
     color: {
       r: 0.7843137254901961,
       g: 0.1568627450980392,
-      b: 0.1607843137254902
-    }
+      b: 0.1607843137254902,
+    },
   },
-  "hljs-template-variable": {
-    type: "SOLID",
+  'hljs-template-variable': {
+    type: 'SOLID',
     color: {
       r: 0.7843137254901961,
       g: 0.1568627450980392,
-      b: 0.1607843137254902
-    }
+      b: 0.1607843137254902,
+    },
   },
-  "hljs-tag": {
-    type: "SOLID",
+  'hljs-tag': {
+    type: 'SOLID',
     color: {
       r: 0.7843137254901961,
       g: 0.1568627450980392,
-      b: 0.1607843137254902
-    }
+      b: 0.1607843137254902,
+    },
   },
-  "hljs-name": {
-    type: "SOLID",
+  'hljs-name': {
+    type: 'SOLID',
     color: {
       r: 0.7843137254901961,
       g: 0.1568627450980392,
-      b: 0.1607843137254902
-    }
+      b: 0.1607843137254902,
+    },
   },
-  "hljs-selector-id": {
-    type: "SOLID",
+  'hljs-selector-id': {
+    type: 'SOLID',
     color: {
       r: 0.7843137254901961,
       g: 0.1568627450980392,
-      b: 0.1607843137254902
-    }
+      b: 0.1607843137254902,
+    },
   },
-  "hljs-selector-class": {
-    type: "SOLID",
+  'hljs-selector-class': {
+    type: 'SOLID',
     color: {
       r: 0.7843137254901961,
       g: 0.1568627450980392,
-      b: 0.1607843137254902
-    }
+      b: 0.1607843137254902,
+    },
   },
-  "hljs-regexp": {
-    type: "SOLID",
+  'hljs-regexp': {
+    type: 'SOLID',
     color: {
       r: 0.7843137254901961,
       g: 0.1568627450980392,
-      b: 0.1607843137254902
-    }
+      b: 0.1607843137254902,
+    },
   },
-  "hljs-deletion": {
-    type: "SOLID",
+  'hljs-deletion': {
+    type: 'SOLID',
     color: {
       r: 0.7843137254901961,
       g: 0.1568627450980392,
-      b: 0.1607843137254902
-    }
+      b: 0.1607843137254902,
+    },
   },
-  "hljs-number": {
-    type: "SOLID",
+  'hljs-number': {
+    type: 'SOLID',
     color: {
       r: 0.9607843137254902,
       g: 0.5294117647058824,
-      b: 0.12156862745098039
-    }
+      b: 0.12156862745098039,
+    },
   },
-  "hljs-built_in": {
-    type: "SOLID",
+  'hljs-built_in': {
+    type: 'SOLID',
     color: {
       r: 0.9607843137254902,
       g: 0.5294117647058824,
-      b: 0.12156862745098039
-    }
+      b: 0.12156862745098039,
+    },
   },
-  "hljs-builtin-name": {
-    type: "SOLID",
+  'hljs-builtin-name': {
+    type: 'SOLID',
     color: {
       r: 0.9607843137254902,
       g: 0.5294117647058824,
-      b: 0.12156862745098039
-    }
+      b: 0.12156862745098039,
+    },
   },
-  "hljs-literal": {
-    type: "SOLID",
+  'hljs-literal': {
+    type: 'SOLID',
     color: {
       r: 0.9607843137254902,
       g: 0.5294117647058824,
-      b: 0.12156862745098039
-    }
+      b: 0.12156862745098039,
+    },
   },
-  "hljs-type": {
-    type: "SOLID",
+  'hljs-type': {
+    type: 'SOLID',
     color: {
       r: 0.9607843137254902,
       g: 0.5294117647058824,
-      b: 0.12156862745098039
-    }
+      b: 0.12156862745098039,
+    },
   },
-  "hljs-params": {
-    type: "SOLID",
+  'hljs-params': {
+    type: 'SOLID',
     color: {
       r: 0.9607843137254902,
       g: 0.5294117647058824,
-      b: 0.12156862745098039
-    }
+      b: 0.12156862745098039,
+    },
   },
-  "hljs-meta": {
-    type: "SOLID",
+  'hljs-meta': {
+    type: 'SOLID',
     color: {
       r: 0.9607843137254902,
       g: 0.5294117647058824,
-      b: 0.12156862745098039
-    }
+      b: 0.12156862745098039,
+    },
   },
-  "hljs-link": {
-    type: "SOLID",
+  'hljs-link': {
+    type: 'SOLID',
     color: {
       r: 0.9607843137254902,
       g: 0.5294117647058824,
-      b: 0.12156862745098039
-    }
+      b: 0.12156862745098039,
+    },
   },
-  "hljs-attribute": {
-    type: "SOLID",
-    color: { r: 0.9176470588235294, g: 0.7176470588235294, b: 0 }
+  'hljs-attribute': {
+    type: 'SOLID',
+    color: { r: 0.9176470588235294, g: 0.7176470588235294, b: 0 },
   },
-  "hljs-string": {
-    type: "SOLID",
-    color: { r: 0.44313725490196076, g: 0.5490196078431373, b: 0 }
+  'hljs-string': {
+    type: 'SOLID',
+    color: { r: 0.44313725490196076, g: 0.5490196078431373, b: 0 },
   },
-  "hljs-symbol": {
-    type: "SOLID",
-    color: { r: 0.44313725490196076, g: 0.5490196078431373, b: 0 }
+  'hljs-symbol': {
+    type: 'SOLID',
+    color: { r: 0.44313725490196076, g: 0.5490196078431373, b: 0 },
   },
-  "hljs-bullet": {
-    type: "SOLID",
-    color: { r: 0.44313725490196076, g: 0.5490196078431373, b: 0 }
+  'hljs-bullet': {
+    type: 'SOLID',
+    color: { r: 0.44313725490196076, g: 0.5490196078431373, b: 0 },
   },
-  "hljs-addition": {
-    type: "SOLID",
-    color: { r: 0.44313725490196076, g: 0.5490196078431373, b: 0 }
+  'hljs-addition': {
+    type: 'SOLID',
+    color: { r: 0.44313725490196076, g: 0.5490196078431373, b: 0 },
   },
-  "hljs-title": {
-    type: "SOLID",
+  'hljs-title': {
+    type: 'SOLID',
     color: {
       r: 0.25882352941176473,
       g: 0.44313725490196076,
-      b: 0.6823529411764706
-    }
+      b: 0.6823529411764706,
+    },
   },
-  "hljs-section": {
-    type: "SOLID",
+  'hljs-section': {
+    type: 'SOLID',
     color: {
       r: 0.25882352941176473,
       g: 0.44313725490196076,
-      b: 0.6823529411764706
-    }
+      b: 0.6823529411764706,
+    },
   },
-  "hljs-keyword": {
-    type: "SOLID",
+  'hljs-keyword': {
+    type: 'SOLID',
     color: {
       r: 0.5372549019607843,
       g: 0.34901960784313724,
-      b: 0.6588235294117647
-    }
+      b: 0.6588235294117647,
+    },
   },
-  "hljs-selector-tag": {
-    type: "SOLID",
+  'hljs-selector-tag': {
+    type: 'SOLID',
     color: {
       r: 0.5372549019607843,
       g: 0.34901960784313724,
-      b: 0.6588235294117647
-    }
+      b: 0.6588235294117647,
+    },
   },
-  "hljs-emphasis": {
-    type: "SOLID",
+  'hljs-emphasis': {
+    type: 'SOLID',
     color: {
       r: 0.30196078431372547,
       g: 0.30196078431372547,
-      b: 0.2980392156862745
-    }
+      b: 0.2980392156862745,
+    },
   },
-  "hljs-strong": {
-    type: "SOLID",
+  'hljs-strong': {
+    type: 'SOLID',
     color: {
       r: 0.30196078431372547,
       g: 0.30196078431372547,
-      b: 0.2980392156862745
-    }
-  }
-};
-export default tomorrow;
+      b: 0.2980392156862745,
+    },
+  },
+}
+export default tomorrow

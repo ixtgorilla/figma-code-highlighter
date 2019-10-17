@@ -1,74 +1,74 @@
-import { SchemaAndLanguage } from "./models/SchemaAndLanguage";
-import changeColorUsecase from "./usecases/changeColorUsecase";
+import { SchemaAndLanguage } from './models/SchemaAndLanguage'
+import changeColorUsecase from './usecases/changeColorUsecase'
 
-declare function require(path: string): any;
+declare function require(path: string): any
 
-figma.showUI(__html__);
-figma.ui.resize(300, 300);
+figma.showUI(__html__)
+figma.ui.resize(300, 300)
 
 //
 // Initialize
 //
 
 figma.clientStorage
-  .getAsync("currentSchemaAndLanguage")
+  .getAsync('currentSchemaAndLanguage')
   .then(schemaAndLanguage => {
     if (schemaAndLanguage) {
       figma.ui.postMessage({
-        type: "CURRENT_SCHEMA_AND_LANGUAGE",
-        schemaAndLanguage
-      });
+        type: 'CURRENT_SCHEMA_AND_LANGUAGE',
+        schemaAndLanguage,
+      })
     } else {
       figma.ui.postMessage({
-        type: "CURRENT_SCHEMA_AND_LANGUAGE",
-        schemaAndLanguage: { colorSchema: "", language: "" }
-      });
+        type: 'CURRENT_SCHEMA_AND_LANGUAGE',
+        schemaAndLanguage: { colorSchema: '', language: '' },
+      })
     }
-  });
+  })
 
 figma.clientStorage
-  .getAsync("bookMarkedSchemaAndLanguage")
+  .getAsync('bookMarkedSchemaAndLanguage')
   .then(schemaAndLanguages => {
     if (schemaAndLanguages) {
       figma.ui.postMessage({
-        type: "BOOKMARKED_SCHEMA_AND_LANGUAGES",
-        schemaAndLanguages
-      });
+        type: 'BOOKMARKED_SCHEMA_AND_LANGUAGES',
+        schemaAndLanguages,
+      })
     } else {
       figma.ui.postMessage({
-        type: "BOOKMARKED_SCHEMA_AND_LANGUAGES",
-        schemaAndLanguages: []
-      });
+        type: 'BOOKMARKED_SCHEMA_AND_LANGUAGES',
+        schemaAndLanguages: [],
+      })
     }
-  });
+  })
 
 //
 // Router
 //
 
 figma.ui.onmessage = msg => {
-  if (msg.type == "CHANGE_COLOR") {
-    const schemaAndLanguage: SchemaAndLanguage = msg.schemaAndLanguage;
+  if (msg.type == 'CHANGE_COLOR') {
+    const schemaAndLanguage: SchemaAndLanguage = msg.schemaAndLanguage
 
     try {
       figma.currentPage.selection &&
-        changeColorUsecase(figma.currentPage.selection, schemaAndLanguage);
+        changeColorUsecase(figma.currentPage.selection, schemaAndLanguage)
       figma.clientStorage
-        .setAsync("currentSchemaAndLanguage", schemaAndLanguage)
+        .setAsync('currentSchemaAndLanguage', schemaAndLanguage)
         .then(() => {
-          console.log("Cached.");
-        });
+          console.log('Cached.')
+        })
     } catch (e) {
-      figma.notify(`😭 ${e}`);
+      figma.notify(`😭 ${e}`)
     }
   }
 
-  if (msg.type == "UPDATE_BOOKMARKS") {
-    const schemaAndLanguages: SchemaAndLanguage[] = msg.schemaAndLanguages;
+  if (msg.type == 'UPDATE_BOOKMARKS') {
+    const schemaAndLanguages: SchemaAndLanguage[] = msg.schemaAndLanguages
     figma.clientStorage
-      .setAsync("bookMarkedSchemaAndLanguage", schemaAndLanguages)
+      .setAsync('bookMarkedSchemaAndLanguage', schemaAndLanguages)
       .then(() => {
-        console.log("Bookmark saved.");
-      });
+        console.log('Bookmark saved.')
+      })
   }
-};
+}

@@ -1,45 +1,45 @@
-import * as React from "react";
-import { useState, useEffect } from "react";
-import Bookmarks from "../components/Bookmarks";
-import HighlightExecutor from "../components/HighlightExecutor";
+import * as React from 'react'
+import { useState, useEffect } from 'react'
+import Bookmarks from '../components/Bookmarks'
+import HighlightExecutor from '../components/HighlightExecutor'
 
 const Dashboard: React.FC = () => {
   const [schemaAndLanguage, setSchemaAndLanguage] = useState({
-    language: "",
-    colorSchema: ""
-  });
+    language: '',
+    colorSchema: '',
+  })
 
   const [
     bookmarkedSchemaAndLanguages,
-    setBookmarkedSchemaAndLanguages
-  ] = useState([]);
+    setBookmarkedSchemaAndLanguages,
+  ] = useState([])
 
   useEffect(() => {
     onmessage = event => {
-      if (event.data.pluginMessage.type == "CURRENT_SCHEMA_AND_LANGUAGE") {
-        setSchemaAndLanguage(event.data.pluginMessage.schemaAndLanguage);
+      if (event.data.pluginMessage.type == 'CURRENT_SCHEMA_AND_LANGUAGE') {
+        setSchemaAndLanguage(event.data.pluginMessage.schemaAndLanguage)
       }
 
-      if (event.data.pluginMessage.type == "BOOKMARKED_SCHEMA_AND_LANGUAGES") {
+      if (event.data.pluginMessage.type == 'BOOKMARKED_SCHEMA_AND_LANGUAGES') {
         setBookmarkedSchemaAndLanguages(array => [
           ...array,
-          ...event.data.pluginMessage.schemaAndLanguages
-        ]);
+          ...event.data.pluginMessage.schemaAndLanguages,
+        ])
       }
-    };
-  });
+    }
+  })
 
   useEffect(() => {
     parent.postMessage(
       {
         pluginMessage: {
-          type: "UPDATE_BOOKMARKS",
-          schemaAndLanguages: bookmarkedSchemaAndLanguages
-        }
+          type: 'UPDATE_BOOKMARKS',
+          schemaAndLanguages: bookmarkedSchemaAndLanguages,
+        },
       },
-      "*"
-    );
-  }, [bookmarkedSchemaAndLanguages]);
+      '*'
+    )
+  }, [bookmarkedSchemaAndLanguages])
 
   return (
     <div>
@@ -48,16 +48,16 @@ const Dashboard: React.FC = () => {
         setColorSchema={event => {
           setSchemaAndLanguage(
             Object.assign(schemaAndLanguage, {
-              colorSchema: event.target.value
+              colorSchema: event.target.value,
             })
-          );
+          )
         }}
         setLanguage={event => {
           setSchemaAndLanguage(
             Object.assign(schemaAndLanguage, {
-              language: event.target.value
+              language: event.target.value,
             })
-          );
+          )
         }}
       />
 
@@ -68,19 +68,19 @@ const Dashboard: React.FC = () => {
         bookmarkedSchemaAndLanguages={bookmarkedSchemaAndLanguages}
         createBookmark={schemaAndLanguage => {
           setBookmarkedSchemaAndLanguages(array => {
-            const obj = Object.assign({}, schemaAndLanguage);
-            return [obj, ...array];
-          });
+            const obj = Object.assign({}, schemaAndLanguage)
+            return [obj, ...array]
+          })
         }}
         destroyBookmark={index => {
           setBookmarkedSchemaAndLanguages(array => {
-            array.splice(index, 1);
-            return [...array];
-          });
+            array.splice(index, 1)
+            return [...array]
+          })
         }}
       />
     </div>
-  );
-};
+  )
+}
 
-export default Dashboard;
+export default Dashboard
