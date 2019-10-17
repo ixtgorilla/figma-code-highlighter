@@ -4,7 +4,7 @@
 
 Code highlighter for Figma. This plugin supports about 200 languages and about 100 color schemas.
 
-Select any text box, select color schema, language, and run the plugin. Text will be highlight.
+Select any text box, select color schema, language, and run the plugin. Text will be highlighten.
 You can save your favorite color schema and language as bookmark.
 
 This plugin uses <a href="https://github.com/highlightjs/highlight.js">highlight.js</a> parse logic and color schemas.
