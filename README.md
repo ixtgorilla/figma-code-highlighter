@@ -1,6 +1,6 @@
-# Figma Code Highlighter
-
 <img src="https://i.gyazo.com/fd314b275aa4a8e6bb30da722d2d2298.png" alt="Image from Gyazo" width="2048"/>
+
+# Figma Code Highlighter
 
 Code highlighter for Figma. This plugin supports about 200 languages and about 100 color schemas.
 
