@@ -7,7 +7,6 @@ const dom = require("xmldom").DOMParser;
 
 declare function require(path: string): any;
 
-/* Elementを再帰的にdigる */
 function* walkTree(node) {
   yield node;
   let children = node.childNodes;
@@ -18,7 +17,6 @@ function* walkTree(node) {
   }
 }
 
-/* ElementのStringの文字数をカウントする */
 function countLength(node): number {
   let lng: number = 0;
 
@@ -61,10 +59,8 @@ const changeColorUsecase = (
           let node = res.value;
 
           if (node.data) {
-            /* Text Nodeの場合 開始位置を足し上げてく  */
             length = length + node.length;
           } else {
-            /* Element Nodeの場合 着色する開始位置と終了位置を定義する  */
             results.push({
               length: countLength(node),
               lengthStart: length,
@@ -74,12 +70,10 @@ const changeColorUsecase = (
           }
         }
       }
-      /* 文字全体をまずデフォルトカラーで着色 */
       itm.setRangeFills(0, itm.characters.length, [
         <Paint>colorSchema[schemaAndLanguage.colorSchema]["hljs"]
       ]);
 
-      /* 着色する部分を適応 */
       results.map(res => {
         let color = colorSchema[schemaAndLanguage.colorSchema][res.className];
         color = color
