@@ -1,6 +1,6 @@
 import * as React from "react";
 import * as ReactDOM from "react-dom";
-import Dashboard from "./page/Dashboard";
+import Dashboard from "./pages/Dashboard";
 import "./figma-plugin-ds.css";
 import "./ui.css";
 

@@ -1,5 +1,5 @@
-import { SchemaAndLanguage } from "./model/SchemaAndLanguage";
-import changeColorUsecase from "./usecase/changeColorUsecase";
+import { SchemaAndLanguage } from "./models/SchemaAndLanguage";
+import changeColorUsecase from "./usecases/changeColorUsecase";
 
 declare function require(path: string): any;
 
