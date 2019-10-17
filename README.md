@@ -1,4 +1,4 @@
-<img src="https://i.gyazo.com/fd314b275aa4a8e6bb30da722d2d2298.png" alt="Image from Gyazo" width="2048"/>
+<img src="https://gyazo.com/7bec07ab74c07d6c5690a9499fa78726" alt="Image from Gyazo" width="2048"/>
 
 # Figma Code Highlighter
 
