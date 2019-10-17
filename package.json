@@ -1,15 +1,24 @@
 {
   "name": "figma-code-highlighter",
   "version": "1.0.0",
-  "description": "This plugin template uses Typescript. If you are familiar with Javascript, Typescript will look very familiar. In fact, valid Javascript code is already valid Typescript code.",
+  "description": "Code highlighter for Figma. This plugin supports about 200 languages and about 100 color schemas.",
+  "keywords": [
+    "highlight",
+    "syntax",
+    "figma",
+    "figma-plugin"
+  ],
   "main": "code.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "webpack --mode=development --watch",
     "prettier-w": "prettier --write ./{src,__tests__,pages}/**/*.{ts,tsx}"
   },
-  "author": "ixtgorilla",
-  "license": "ISC",
+  "author": {
+    "name": "ixtgorilla",
+    "email": "ixtgorilla@gmail.com"
+  },
+  "license": "BSD-3-Clause",
   "devDependencies": {
     "@types/highlight.js": "^9.12.3",
     "@types/react": "^16.9.6",
