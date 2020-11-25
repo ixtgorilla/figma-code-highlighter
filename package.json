@@ -36,7 +36,7 @@
   "dependencies": {
     "@types/humps": "^1.1.2",
     "@types/node": "^12.7.12",
-    "highlight.js": "^9.15.10",
+    "highlight.js": "^10.1.2",
     "humps": "^2.0.1",
     "prettier": "^1.18.2",
     "react": "^16.10.2",
